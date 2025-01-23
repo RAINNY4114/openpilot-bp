@@ -88,14 +88,14 @@ class CarState(CarStateBase):
       elif self.CP.flags & FordFlags.ALT_STEER_ANGLE:
         if (cp.vl["TransGearData"]["GearLvrPos_D_Actl"] in (3, 4, 5)):
          ret.gearShifter = GearShifter.drive
-      elif (cp.vl["TransGearData"]["GearLvrPos_D_Actl"] == 1):
-        ret.gearShifter = GearShifter.reverse
+        elif (cp.vl["TransGearData"]["GearLvrPos_D_Actl"] == 1):
+         ret.gearShifter = GearShifter.reverse
     elif self.CP.transmissionType == TransmissionType.manual:
       ret.clutchPressed = cp.vl["Engine_Clutch_Data"]["CluPdlPos_Pc_Meas"] > 0
       if bool(cp.vl["BCM_Lamp_Stat_FD1"]["RvrseLghtOn_B_Stat"]):
         ret.gearShifter = GearShifter.reverse
-     else:
-      ret.gearShifter = GearShifter.drive
+      else:
+        ret.gearShifter = GearShifter.drive
 
     # safety
     ret.stockFcw = bool(cp_cam.vl["ACCDATA_3"]["FcwVisblWarn_B_Rq"])
