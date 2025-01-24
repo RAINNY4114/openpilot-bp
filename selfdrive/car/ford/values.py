@@ -165,6 +165,10 @@ class CAR(Platforms):
     [FordCarDocs("Ford Ranger 2024", "Adaptive Cruise Control with Lane Centering")],
     CarSpecs(mass=2000, wheelbase=3.27, steerRatio=17.0),
   )
+  LINCOLN_NAUTILUS = FordCANFDPlatformConfig(
+    [FordCarDocs("Lincoln 2018-21", "Adaptive Cruise Control with Lane Centering")],
+    CarSpecs(mass=2000, wheelbase=3.27, steerRatio=19.3),
+  )
 
 
 # Custom Ford Vehicle Tuning Params (per-fingerprint)
