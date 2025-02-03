@@ -1,4 +1,3 @@
-
 from cereal import car
 from openpilot.selfdrive.car.ford.values import CAR
 
