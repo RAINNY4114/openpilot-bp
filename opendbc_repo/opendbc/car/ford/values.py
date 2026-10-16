@@ -224,6 +224,10 @@ class CAR(Platforms):
     # the year set excludes the unsupported 2019-23 Ranger, which shares this code
     wmis={'1FT'}, vds_codes={'ER4'}, years={MY_2024},
   )
+  LINCOLN_NAUTILUS = FordPlatformConfig(
+    [FordCarDocs("Lincoln Nautilus 2018-21", "Adaptive Cruise Control with Lane Centering")],
+    CarSpecs(mass=2050, wheelbase=3.025, steerRatio=19.33),
+  )
 
 
 # FW response contains a combined software and part number
