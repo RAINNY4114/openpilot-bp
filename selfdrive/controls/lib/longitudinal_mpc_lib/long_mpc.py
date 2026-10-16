@@ -62,7 +62,7 @@ T_IDXS = np.array(T_IDXS_LST)
 FCW_IDXS = T_IDXS < 5.0
 T_DIFFS = np.diff(T_IDXS, prepend=[0.])
 COMFORT_BRAKE = 2.5
-STOP_DISTANCE = 6.0
+STOP_DISTANCE = 3.0
 # 低速停车距离缩放（用户需求）：慢速跟停时固定停车余量随车速缩小——
 # 车速趋近 0 时余量约为 2.7m（6.0 * 0.45），≥10 m/s 恢复完整 6.0m，
 # 避免低速跟车停车距离过大；快速减速刹停的均衡距离基本不受影响。
