@@ -29,9 +29,9 @@ class DRIVER_MONITOR_SETTINGS:
     self._WHEELTOUCH_POLICY_ALERT_2_TIMEOUT = 24.
     self._WHEELTOUCH_POLICY_ALERT_3_TIMEOUT = 30.
     # https://cdn.euroncap.com/cars/assets/euro_ncap_protocol_safe_driving_driver_engagement_v11_a30e874152.pdf
-    self._VISION_POLICY_ALERT_1_TIMEOUT = 3.
-    self._VISION_POLICY_ALERT_2_TIMEOUT = 5.
-    self._VISION_POLICY_ALERT_3_TIMEOUT = 11.
+    self._VISION_POLICY_ALERT_1_TIMEOUT = 7.
+    self._VISION_POLICY_ALERT_2_TIMEOUT = 12.
+    self._VISION_POLICY_ALERT_3_TIMEOUT = 18.
 
     self._TIMEOUT_RECOVERY_FACTOR_MAX = 5.
     self._TIMEOUT_RECOVERY_FACTOR_MIN = 1.25
